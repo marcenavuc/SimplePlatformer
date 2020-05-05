@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4B96806D-EA4F-29C8-FFFC-08AB6B85CCB6}</ProjectGuid>
+    <ProjectGuid>{A0FDE673-31E6-872E-23FF-3F8A59B22505}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,10 +58,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Bufs\Ammo.cs" />
+     <Compile Include="Assets\Scripts\Bufs\Coin.cs" />
+     <Compile Include="Assets\Scripts\Bufs\Heart.cs" />
+     <Compile Include="Assets\Scripts\Bufs\SpeedBuf.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\BulletBar.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
-     <Compile Include="Assets\Scripts\Heart.cs" />
+     <Compile Include="Assets\Scripts\CoinsBar.cs" />
      <Compile Include="Assets\Scripts\LivesBar.cs" />
      <Compile Include="Assets\Scripts\Monster.cs" />
      <Compile Include="Assets\Scripts\MovingMonster.cs" />
@@ -70,31 +75,31 @@
      <Compile Include="Assets\Scripts\ShootableMonster.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/2DPlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/home/mark/Unity/Hub/Editor/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

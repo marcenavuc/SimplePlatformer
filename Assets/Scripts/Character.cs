@@ -3,22 +3,14 @@ using System.Collections;
 
 public class Character : Unit
 {
-    public override int Health
-    {
-        get => health;
-        set
-        {
-            if (value < 5)
-                health = value;
-            healthBar.Refresh();
-        }
-    }
+    [SerializeField] public int maxLives = 5;
+    [SerializeField] public int maxBullets = 5;
+    [SerializeField] private int bullets = 5;
+    [SerializeField] private int coins = 0;
+    private LivesBar livesBar;
+    private BulletBar bulletBar;
+    private CoinsBar coinsBar;
 
-    [SerializeField]
-    private float speed = 3.0F;
-    [SerializeField]
-    private float jumpForce = 15.0F;
-    
     private bool canShoot = true;
     private bool isGrounded;
     private Bullet bullet;
@@ -28,6 +20,41 @@ public class Character : Unit
     private Animator animator;
     private SpriteRenderer sprite;
 
+    
+    public override int Health
+    {
+        get => health;
+        set
+        {
+            if (value < maxLives) health = value;
+            livesBar.Refresh();
+        }
+    }
+
+    public int Bullets 
+    {
+        get => bullets;
+        set
+        {
+            if (value <= maxBullets) bullets = value;
+            Debug.Log(bulletBar);
+            bulletBar.Refresh();
+        }
+    }
+
+    [SerializeField] public float Speed = 3f;
+    [SerializeField] public float JumpForce = 15f;
+    
+    public int Coins
+    {
+        get => coins;
+        set
+        {
+            coins = value;
+            coinsBar.Refresh();
+        }
+    }
+    
     private CharState State
     {
         get => (CharState) animator.GetInteger("State");
@@ -36,7 +63,9 @@ public class Character : Unit
 
     private void Awake()
     {
-        healthBar = FindObjectOfType<LivesBar>();
+        coinsBar = FindObjectOfType<CoinsBar>();
+        bulletBar = FindObjectOfType<BulletBar>();
+        livesBar = FindObjectOfType<LivesBar>();
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
@@ -64,7 +93,7 @@ public class Character : Unit
     {
         var direction = transform.right * Input.GetAxis("Horizontal");
         var position = transform.position;
-        position = Vector3.MoveTowards(position, position + direction, speed * Time.deltaTime);
+        position = Vector3.MoveTowards(position, position + direction, Speed * Time.deltaTime);
         transform.position = position;
         sprite.flipX = direction.x < 0.0F;
         
@@ -74,11 +103,13 @@ public class Character : Unit
 
     private void Jump()
     {
-        rigidbody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        rigidbody.AddForce(transform.up * JumpForce, ForceMode2D.Impulse);
     }
 
     private void TryToShoot()
     {
+        if (Bullets <= 0) return;
+        Bullets--;
         var position = transform.position; 
         position.y += 0.8F;
         var newBullet = Instantiate(bullet, position, bullet.transform.rotation);
