@@ -1,5 +1,7 @@
+.idea
 .vs
 Library
 *.meta
 Logs
 Temp
+obj
