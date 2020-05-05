@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\GAMER\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\GAMER\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_2D Platformer.609479045.00" t="ExcludeRecursive" />
+    <e p="C:\Users\GAMER\Desktop\2D Platformer" t="IncludeRecursive">
+      <e p="2D Platformer.sln" t="IncludeFlat" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Bullet.cs" t="Include" />
+          <e p="CameraController.cs" t="Include" />
+          <e p="Character.cs" t="Include" />
+          <e p="DeathZone.cs" t="Include" />
+          <e p="LivesBar.cs" t="Include" />
+          <e p="Monster.cs" t="Include" />
+          <e p="MovingMonster.cs" t="Include" />
+          <e p="MovingPlatform.cs" t="Include" />
+          <e p="NewAssembly.asmdef" t="Include" />
+          <e p="Obstacle.cs" t="Include" />
+          <e p="ShootableMonster.cs" t="Include" />
+          <e p="Tests" t="Include">
+            <e p="NewTestScript.cs" t="Include" />
+            <e p="Tests.asmdef" t="Include" />
+          </e>
+          <e p="Unit.cs" t="Include" />
+        </e>
+      </e>
+      <e p="NewAssembly.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Tests.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
