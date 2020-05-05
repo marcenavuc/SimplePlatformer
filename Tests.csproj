@@ -58,8 +58,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Tests\NewTestScript.cs" />
-     <None Include="Assets\Scripts\Tests\Tests.asmdef" />
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
@@ -594,6 +592,9 @@
  <Reference Include="mscorlib">
  <HintPath>/home/mark/Unity/Hub/Editor/2019.3.11f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Scripts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
