@@ -1,14 +1,16 @@
 using UnityEngine;
-using System.Collections;
 
-public class Coin : MonoBehaviour
+namespace Bufs
 {
-    private void OnTriggerEnter2D(Collider2D collider)
+    public class Coin : MonoBehaviour
     {
-        var character = collider.GetComponent<Character>();
+        private void OnTriggerEnter2D(Collider2D collider)
+        {
+            var character = collider.GetComponent<Character>();
 
-        if (!character) return;
-        character.Coins++;
-        Destroy(gameObject);
+            if (!character) return;
+            character.Coins++;
+            Destroy(gameObject);
+        }
     }
 }

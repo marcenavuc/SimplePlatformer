@@ -1,15 +1,17 @@
 using UnityEngine;
-using System.Collections;
 
-public class Ammo : MonoBehaviour
+namespace Bufs
 {
-    [SerializeField] private int amountOfBullets = 1;
-    private void OnTriggerEnter2D(Collider2D collider)
+    public class Ammo : MonoBehaviour
     {
-        var character = collider.GetComponent<Character>();
+        [SerializeField] private int amountOfBullets = 1;
+        private void OnTriggerEnter2D(Collider2D collider)
+        {
+            var character = collider.GetComponent<Character>();
 
-        if (!character || character.Bullets == character.maxBullets) return;
-        character.Bullets += amountOfBullets;
-        Destroy(gameObject);
+            if (!character || character.Bullets == character.maxBullets) return;
+            character.Bullets += amountOfBullets;
+            Destroy(gameObject);
+        }
     }
 }

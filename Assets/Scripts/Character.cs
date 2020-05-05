@@ -6,7 +6,7 @@ public class Character : Unit
     [SerializeField] public int maxLives = 5;
     [SerializeField] public int maxBullets = 5;
     [SerializeField] private int bullets = 5;
-    [SerializeField] private int coins = 0;
+    [SerializeField] private int coins;
     private LivesBar livesBar;
     private BulletBar bulletBar;
     private CoinsBar coinsBar;
@@ -27,7 +27,8 @@ public class Character : Unit
         set
         {
             if (value <= maxLives) health = value;
-            livesBar.Refresh();
+            if (healthBar)
+                livesBar.Refresh();
         }
     }
 
@@ -38,7 +39,8 @@ public class Character : Unit
         {
             if (value <= maxBullets) bullets = value;
             Debug.Log(bulletBar);
-            bulletBar.Refresh();
+            if (bulletBar)
+                bulletBar.Refresh();
         }
     }
 

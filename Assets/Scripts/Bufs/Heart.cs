@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 
-public class Heart : MonoBehaviour
+namespace Bufs
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    public class Heart : MonoBehaviour
     {
-        var character = other.GetComponent<Character>();
-        Debug.Log($"From heart class {character.Health}");
-        if (!character || character.Health == character.maxLives) return;
-        character.Health++;
-        Destroy(gameObject);
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            var character = other.GetComponent<Character>();
+            Debug.Log($"From heart class {character.Health}");
+            if (!character || character.Health == character.maxLives) return;
+            character.Health++;
+            Destroy(gameObject);
+        }
     }
 }
