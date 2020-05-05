@@ -26,7 +26,7 @@ public class Character : Unit
         get => health;
         set
         {
-            if (value < maxLives) health = value;
+            if (value <= maxLives) health = value;
             livesBar.Refresh();
         }
     }
@@ -106,7 +106,7 @@ public class Character : Unit
         rigidbody.AddForce(transform.up * JumpForce, ForceMode2D.Impulse);
     }
 
-    private void TryToShoot()
+    public void TryToShoot()
     {
         if (Bullets <= 0) return;
         Bullets--;

@@ -14,6 +14,7 @@ public class LivesBar : MonoBehaviour
 
     public void Refresh()
     {
+        Debug.Log(character.Health);
         for (var i = 0; i < hearts.Length; i++) 
             hearts[i].gameObject.SetActive(i < character.Health);
     }
