@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Character : Unit
 {
@@ -132,6 +133,11 @@ public class Character : Unit
         Health--;
         rigidbody.velocity = Vector3.zero;
         rigidbody.AddForce(transform.up * 8.0F, ForceMode2D.Impulse);
+    }
+
+    public override void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void CheckGround()

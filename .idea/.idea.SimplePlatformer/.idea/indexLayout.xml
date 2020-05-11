@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelUserStore">
-    <attachedFolders />
-    <explicitIncludes>
+    <attachedFolders>
       <Path>../../.config/unity3d/cache/packages/packages.unity.com/com.unity.collab-proxy@1.2.16</Path>
       <Path>../../.config/unity3d/cache/packages/packages.unity.com/com.unity.ext.nunit@1.0.0</Path>
       <Path>../../.config/unity3d/cache/packages/packages.unity.com/com.unity.ide.rider@1.1.4</Path>
@@ -10,6 +9,15 @@
       <Path>../../.config/unity3d/cache/packages/packages.unity.com/com.unity.test-framework@1.1.13</Path>
       <Path>../../.config/unity3d/cache/packages/packages.unity.com/com.unity.textmeshpro@2.0.1</Path>
       <Path>../../.config/unity3d/cache/packages/packages.unity.com/com.unity.timeline@1.2.14</Path>
+    </attachedFolders>
+    <explicitIncludes>
+      <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
+      <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
+      <Path>Library/PackageCache/com.unity.ide.rider@1.1.4</Path>
+      <Path>Library/PackageCache/com.unity.ide.vscode@1.1.4</Path>
+      <Path>Library/PackageCache/com.unity.test-framework@1.1.13</Path>
+      <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
+      <Path>Library/PackageCache/com.unity.timeline@1.2.14</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>
@@ -18,7 +26,6 @@
       <Path>.idea</Path>
       <Path>.vs</Path>
       <Path>Library</Path>
-      <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

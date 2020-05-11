@@ -10,7 +10,7 @@ public abstract class Unit : MonoBehaviour
         Die();
     }
 
-    public void Die()
+    public virtual void Die()
     {
         Destroy(gameObject);
     }
