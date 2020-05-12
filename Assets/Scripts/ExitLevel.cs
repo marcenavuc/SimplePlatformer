@@ -11,6 +11,10 @@ public class ExitLevel : MonoBehaviour
 
     private void GoToNextLevel()
     {
-        SceneManager.LoadScene("Level2");
+        var currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Level5")
+            SceneManager.LoadScene(0);
+        else
+            SceneManager.LoadScene(currentScene.buildIndex + 1);
     }
 }

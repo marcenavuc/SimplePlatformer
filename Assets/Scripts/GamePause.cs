@@ -18,6 +18,7 @@ public class GamePause : MonoBehaviour
 
     public void SetPause()
     {
+        Cursor.visible = true;
         Time.timeScale = 0;
         buttons.SetActive(true);
     }
@@ -25,6 +26,7 @@ public class GamePause : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
+        Cursor.visible = false;
         buttons.SetActive(false);
     }
 

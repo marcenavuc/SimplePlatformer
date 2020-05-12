@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Timers;
 using UnityEngine.SceneManagement;
 
 public class Character : Unit
@@ -30,6 +31,8 @@ public class Character : Unit
             if (value <= maxLives) health = value;
             if (livesBar)
                 livesBar.Refresh();
+            if (health <= 0)
+                Die();
         }
     }
 
@@ -84,7 +87,7 @@ public class Character : Unit
     {
         if (isGrounded) 
             State = CharState.Idle;
-        if (Input.GetButtonDown("Fire1") && canShoot) 
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canShoot) 
             TryToShoot();
         if (Input.GetButton("Horizontal")) 
             Run();

@@ -10,14 +10,9 @@ namespace Buttons
             SceneManager.LoadScene("MainMenu");
         }
 
-        public void LoadFirstLevel()
+        public void LoadLevel(int number)
         {
-            SceneManager.LoadScene("Level1");
-        }
-        
-        public void LoadSecondLevel()
-        {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene(number);
         }
     }
 }
