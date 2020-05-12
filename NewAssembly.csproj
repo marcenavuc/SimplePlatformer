@@ -64,10 +64,14 @@
      <Compile Include="Assets\Scripts\Bufs\SpeedBuf.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\BulletBar.cs" />
+     <Compile Include="Assets\Scripts\Buttons\LevelSelector.cs" />
+     <Compile Include="Assets\Scripts\Buttons\MainMenu.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\CoinsBar.cs" />
      <Compile Include="Assets\Scripts\DeathZone.cs" />
+     <Compile Include="Assets\Scripts\ExitLevel.cs" />
+     <Compile Include="Assets\Scripts\GamePause.cs" />
      <Compile Include="Assets\Scripts\LivesBar.cs" />
      <Compile Include="Assets\Scripts\Monster.cs" />
      <Compile Include="Assets\Scripts\MovingMonster.cs" />
@@ -77,10 +81,10 @@
      <Compile Include="Assets\Scripts\Unit.cs" />
      <None Include="Assets\Scripts\NewAssembly.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/FinallyPlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/FinallyPlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/home/mark/Unity/Hub/Editor/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

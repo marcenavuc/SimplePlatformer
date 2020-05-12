@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .idea
 .vs
 Temp/
@@ -5,3 +6,10 @@ Library/
 obj/
 .Rhistory
 
+=======
+.vs/
+.idea/
+Temp/
+Library/
+obj/
+>>>>>>> pasha

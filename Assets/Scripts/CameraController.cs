@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.visible = false;
         if (!target) 
             target = FindObjectOfType<Character>().transform;
     }

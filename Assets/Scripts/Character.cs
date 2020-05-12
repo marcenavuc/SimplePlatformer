@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Timers;
+using UnityEngine.SceneManagement;
 
 public class Character : Unit
 {
@@ -14,7 +16,6 @@ public class Character : Unit
     private bool canShoot = true;
     private bool isGrounded;
     private Bullet bullet;
-    private LivesBar healthBar;
     private int health = 5;
     private new Rigidbody2D rigidbody;
     private Animator animator;
@@ -26,9 +27,12 @@ public class Character : Unit
         get => health;
         set
         {
+            Debug.Log(value);
             if (value <= maxLives) health = value;
-            if (healthBar)
+            if (livesBar)
                 livesBar.Refresh();
+            if (health <= 0)
+                Die();
         }
     }
 
@@ -83,7 +87,7 @@ public class Character : Unit
     {
         if (isGrounded) 
             State = CharState.Idle;
-        if (Input.GetButtonDown("Fire1") && canShoot) 
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canShoot) 
             TryToShoot();
         if (Input.GetButton("Horizontal")) 
             Run();
@@ -132,6 +136,11 @@ public class Character : Unit
         Health--;
         rigidbody.velocity = Vector3.zero;
         rigidbody.AddForce(transform.up * 8.0F, ForceMode2D.Impulse);
+    }
+
+    public override void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void CheckGround()

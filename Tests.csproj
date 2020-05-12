@@ -61,16 +61,16 @@
      <Compile Include="Assets\Scripts\Tests\NewTestScript.cs" />
      <None Include="Assets\Scripts\Tests\Tests.asmdef" />
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/FinallyPlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/FinallyPlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/FinallyPlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/FinallyPlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/home/mark/Unity/Hub/Editor/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -247,7 +247,7 @@
  <HintPath>/home/mark/Unity/Hub/Editor/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/home/mark/UnityProjects/SimplePlatformer/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/home/mark/UnityProjects/FinallyPlatformer/SimplePlatformer/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/mark/Unity/Hub/Editor/2019.3.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

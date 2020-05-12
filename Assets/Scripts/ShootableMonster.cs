@@ -20,7 +20,8 @@ public class ShootableMonster : Monster
     public void Shoot()
     {
         var position = transform.position;          
-        position.y -= 0.75F;
+        // position.y -= 0.75F;
+        position.y += 0.75f;
         position.x -= 0.13f;
         var newBullet = Instantiate(bullet, position, bullet.transform.rotation);
         newBullet.Parent = gameObject;

@@ -10,6 +10,7 @@ public class LivesBar : MonoBehaviour
         character = FindObjectOfType<Character>();
         for (var i = 0; i < hearts.Length; i++) 
             hearts[i] = transform.GetChild(i);
+        Refresh();
     }
 
     public void Refresh()
