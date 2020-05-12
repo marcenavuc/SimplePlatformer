@@ -15,7 +15,6 @@ public class Character : Unit
     private bool canShoot = true;
     private bool isGrounded;
     private Bullet bullet;
-    private LivesBar healthBar;
     private int health = 5;
     private new Rigidbody2D rigidbody;
     private Animator animator;
@@ -27,8 +26,9 @@ public class Character : Unit
         get => health;
         set
         {
+            Debug.Log(value);
             if (value <= maxLives) health = value;
-            if (healthBar)
+            if (livesBar)
                 livesBar.Refresh();
         }
     }
